@@ -92,7 +92,7 @@ p2 {
 }
 
 .Background-img {
-  background-image: url(/img/fondo-proyecto.jpg);
+  background-image: url(https://adripedrido.github.io/img/fondo-proyecto.jpg);
   background-size: cover;
   min-height: 100vh;
   box-shadow: 0 0 200px rgba(0, 0, 0, 0.7) inset;
