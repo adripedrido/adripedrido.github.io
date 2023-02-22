@@ -282,7 +282,7 @@ footer img {
   padding-right: 20px;
 }
 
-@media all and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   nav ul li a {
     font-size: 16px;
   }
@@ -297,7 +297,7 @@ footer img {
   }
 }
 
-@media all and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .checkbtn {
     display: block;
   }
