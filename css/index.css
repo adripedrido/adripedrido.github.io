@@ -40,7 +40,6 @@ body {
   padding: 10px 90px;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.5);
-  border-bottom: 1px solid #fff;
 }
 
 .NavBar nav ul {
