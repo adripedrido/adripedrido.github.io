@@ -83,7 +83,7 @@ body {
 .Background-img h2 {
   font-size: 30px;
   text-align: center;
-  padding-top: 400px;
+  padding-top: 300px;
 }
 /*** MAIN ***/
 
@@ -280,12 +280,10 @@ footer img {
   }
 
   .Background-img h2 {
-    display: block;
     font-size: 30px;
     color: black;
     text-align: center;
-    position: absolute;
-    margin-top: 200px;
+    margin-top: 300px;
   }
 }
 
@@ -299,12 +297,9 @@ footer img {
   }
 
   .Background-img h2 {
-    display: flex;
-    flex-wrap: wrap;
     font-size: 20px;
     color: black;
     text-align: center;
-    position: relative;
-    margin-top: 200px;
+    margin-top: 300px;
   }
 }
