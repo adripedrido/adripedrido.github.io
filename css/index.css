@@ -81,6 +81,7 @@ body {
 }
 
 .Background-img h2 {
+  font-size: 50px;
   text-align: center;
   padding-top: 400px;
 }
@@ -268,7 +269,7 @@ footer img {
   padding-right: 20px;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .NavBar nav ul a {
     line-height: 80px;
     color: #fff;
@@ -288,7 +289,7 @@ footer img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .checkbtn {
     display: block;
   }
