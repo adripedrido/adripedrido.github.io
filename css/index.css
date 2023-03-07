@@ -37,7 +37,7 @@ body {
   left: 0;
   width: 100%;
   height: 100px;
-  padding: 10px 90px;
+  padding: 10px 40px;
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.5);
 }
@@ -53,23 +53,29 @@ body {
 .NavBar nav ul a {
   line-height: 80px;
   color: #fff;
-  padding: 12px 30px;
+  padding: 12px 20px;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
 }
 
+.NavBar a:hover {
+  color: grey;
+  transition: all 0.4s;
+}
+
 #NavBar {
   width: 100%;
   height: 100vh;
-  background: url(/img/fondo-proyecto.jpg);
+  background: url(img/fondo-proyecto.jpg);
   background-size: cover;
   background-position: left;
 }
 
 .checkbtn {
   font-size: 30px;
-  color: #fff;
+  color: white;
+  padding-right: -10px;
   float: right;
   line-height: 80px;
   cursor: pointer;
@@ -80,11 +86,7 @@ body {
   display: none;
 }
 
-.Background-img h2 {
-  font-size: 30px;
-  text-align: center;
-  padding-top: 300px;
-}
+
 /*** MAIN ***/
 
 h1 {
@@ -142,10 +144,12 @@ hr.solidwhite {
 
 .TOP5 a:hover {
   color: white;
+  transition: all 0.4s;
 }
 
 .TOP5 img:hover {
   opacity: 0.5;
+  transition: all 0.4s;
 }
 
 .container-1 {
@@ -235,10 +239,12 @@ hr.solidwhite {
 
 .USERFAV a:hover {
   color: white;
+  transition: all 0.4s;
 }
 
 .USERFAV img:hover {
   opacity: 0.5;
+  transition: all 0.4s;
 }
 
 /*** FOOTER ***/
@@ -269,37 +275,47 @@ footer img {
   padding-right: 20px;
 }
 
-@media (max-width: 1024px) {
-  .NavBar nav ul a {
-    line-height: 80px;
-    color: #fff;
-    padding: 12px 15px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .Background-img h2 {
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    margin-top: 300px;
+@media screen and (max-width: 1024px) {
+  #NavBar nav ul li a {
+    font-size: 17px;
+    padding: 12px 13px;
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .checkbtn {
     display: block;
   }
 
-  .NavBar li {
-    display: none;
+  #NavBar nav ul li {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    line-height: 25px;
   }
 
-  .Background-img h2 {
+  #NavBar nav ul li a{
     font-size: 20px;
-    color: black;
+  }
+
+  #NavBar a:hover{
+    color: rgba(53, 53, 53, 0.8);
+    transition: all 0.4s;
+  }
+
+  #NavBar nav ul {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    top: 100px;
+    left: -100%;
     text-align: center;
-    margin-top: 300px;
+    transition: all 1s;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
   }
 }
