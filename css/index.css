@@ -73,7 +73,7 @@ body {
 }
 
 .loginbtn {
-  color:white;
+  color: white;
 }
 
 .bienvenida h1 {
@@ -96,7 +96,6 @@ body {
 #check {
   display: none;
 }
-
 
 /*** MAIN ***/
 
@@ -286,6 +285,26 @@ footer img {
   padding-right: 20px;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 @media screen and (max-width: 1024px) {
   #NavBar nav ul li a {
     font-size: 17px;
@@ -310,11 +329,11 @@ footer img {
     line-height: 25px;
   }
 
-  #NavBar nav ul li a{
+  #NavBar nav ul li a {
     font-size: 20px;
   }
 
-  #NavBar a:hover{
+  #NavBar a:hover {
     color: rgba(53, 53, 53, 0.8);
     transition: all 0.4s;
   }
@@ -331,7 +350,7 @@ footer img {
     transition: all 1s;
   }
 
-  #check:checked ~ ul{
+  #check:checked ~ ul {
     left: 0;
   }
 }

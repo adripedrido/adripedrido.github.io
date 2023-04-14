@@ -70,8 +70,7 @@ body {
     margin-right: auto;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.29)
-    
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.29);
 }
 
 #form1 p {
@@ -82,7 +81,7 @@ body {
     margin-top: -20px;
 }
 
-input{
+input {
     padding: 10px;
     margin-left: 5px;
 }
@@ -105,7 +104,6 @@ input{
     transition: 400ms;
 }
 
-
 #passwd {
     border-radius: 15px;
     border: none;
@@ -119,7 +117,7 @@ input{
     height: 35px;
 }
 
-#passwd:focus{
+#passwd:focus {
     outline: 1px solid #0077ff;
     transition: 400ms;
 }
@@ -161,6 +159,26 @@ button:hover {
 
 #check {
     display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 @media screen and (max-width: 1024px) {
@@ -222,11 +240,11 @@ button:hover {
         width: 400px;
     }
 
-    input{
+    input {
         padding: 10px;
         margin-left: 5px;
     }
-    
+
     #correo {
         border-radius: 15px;
         width: 390px;
@@ -238,12 +256,11 @@ button:hover {
         padding: 4px;
         height: 35px;
     }
-    
+
     #correo:focus {
         outline: none;
     }
-    
-    
+
     #passwd {
         border-radius: 15px;
         border: none;
@@ -255,8 +272,8 @@ button:hover {
         padding: 4px;
         height: 35px;
     }
-    
-    #passwd:focus{
+
+    #passwd:focus {
         outline: none;
         padding-left: 5px;
     }
