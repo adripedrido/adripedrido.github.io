@@ -62,7 +62,7 @@ body {
     display: inline-block;
     text-align: left;
     margin-top: 200px;
-    height: 265px;
+    height: 350px;
     width: auto;
     border-radius: 25px;
     padding: 50px;
@@ -81,9 +81,35 @@ body {
     margin-top: -20px;
 }
 
+#form1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 input {
     padding: 10px;
     margin-left: 5px;
+}
+
+#usrName {
+    border-radius: 15px;
+    width: 390px;
+    border: none;
+    background-color: rgba(207, 207, 207, 0.4);
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 4px;
+    padding-left: 10px;
+    height: 35px;
+    outline: none;
+    border: none;
+}
+
+#usrName:focus {
+    outline: 1px solid #0077ff;
+    transition: 400ms;
 }
 
 #correo {
@@ -106,12 +132,12 @@ input {
 
 #passwd {
     border-radius: 15px;
-    border: none;
     width: 390px;
+    border: none;
     background-color: rgba(207, 207, 207, 0.4);
     color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 4px;
     padding-left: 10px;
     height: 35px;
@@ -129,8 +155,9 @@ input {
 #acepto {
     position: relative;
     display: inline-flex;
-    margin-left: 25%;
+    margin-left: 70px;
     margin-right: 0;
+    margin-top: 15px;
 }
 
 button {
@@ -145,12 +172,11 @@ button {
     margin-left: 80px;
     padding: 5px;
     display: inline-block;
-    cursor: pointer;
 }
 
 button:hover {
     border-color: #0077ff;
-    color: white;
+    color: #fff;
     background-color: #0077ff;
     transition: 400ms;
 }

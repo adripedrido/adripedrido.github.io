@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MC-Place</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/css/registro.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 </head>
   
@@ -25,16 +25,20 @@
           </ul>
         </nav>
         <form id="form1" method="#" action="#">
-          <p>Inicio Sesion</p>
+          <p>Registro usuario</p>
+          <input id="usrName" placeholder="Usuario">
+          <br>
           <input type="mail" id="correo" placeholder="Correo"/>
           <br>
           <input type="password" id="passwd" placeholder="Contraseña"/>
           <br>
+          <input type="password" id="passwd" placeholder="Repetir contraseña"/>
+          <br>
           <input type="checkbox" id="acepto"/>
-          <label for="acepto">Mantener sesion iniciada</label>
+          <label for="acepto">Acepto los <a href="TermYCond.hml">Terminos y condiciones</a></label>
           <br>
           <button type="button">Login</button>
-          <button type="button" onclick="window.location.href = 'registro.html';">Registrarse</button>
+          <button type="button">Registrarse</button>
         </form>
       </div>
     </header>
