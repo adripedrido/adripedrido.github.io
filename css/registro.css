@@ -179,6 +179,7 @@ button:hover {
     color: #fff;
     background-color: #0077ff;
     transition: 400ms;
+    cursor: pointer;
 }
 
 .checkbtn {
