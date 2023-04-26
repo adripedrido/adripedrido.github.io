@@ -137,6 +137,10 @@ hr.solidwhite {
   margin-right: 10%;
 }
 
+.TOP5 p1 {
+  color: #ffffff;
+}
+
 .Top-5 {
   background-color: #f0f0f0;
   text-align: center;
@@ -214,8 +218,9 @@ hr.solidwhite {
   display: flex;
   flex-direction: column;
   font-style: normal;
-  margin-left: 17%;
-  margin-right: 17%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
   margin-top: 50px;
   margin-bottom: 30px;
 }
@@ -226,6 +231,10 @@ hr.solidwhite {
 }
 
 /*** USER FAV ***/
+.USERFAV p1 {
+  color: #ffffff;
+}
+
 
 .USERFAV {
   display: flex;
@@ -276,29 +285,28 @@ hr.solidwhite {
 /*** FOOTER ***/
 
 footer {
+  position: relative;
+  clear: both;
+  padding: 1%;
+  text-align: center;
   background-color: burlywood;
-  padding-bottom: 2%;
-  padding-top: 1%;
-}
-
-footer li {
-  display: inline-block;
+  height: 80px;
 }
 
 footer img {
-  width: 30px;
   height: 30px;
+  width: 30px;
 }
 
-.footer {
-  display: flex;
+#centered {
+  margin-left: 30vh;
   flex-wrap: wrap;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
-  margin: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+}
+
+small {
+  
+  margin-left: 15vh;
+  margin-right: 15vh;
 }
 
 @media screen and (max-width: 1024px) {
