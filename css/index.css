@@ -94,9 +94,9 @@ body {
 
 .bienvenida h1 {
   text-align: center;
-  margin-top: 380px;
+  margin-top: 20%;
   font-size: 45px;
-  text-shadow: #fff;
+  text-shadow: 2px 2px rgba(141, 141, 141, 0.7);
 }
 
 .checkbtn {
@@ -309,7 +309,6 @@ footer img {
 
   .bienvenida h1 {
     font-size: 30px;
-    margin-top: 280px;
   }
 }
 
