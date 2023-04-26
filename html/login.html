@@ -26,14 +26,15 @@
         </nav>
         <form id="form1" method="#" action="#">
           <p>Inicio Sesion</p>
-          <input type="mail" id="correo" placeholder="Correo"/>
+          <input type="mail" required id="correo"/><label>Correo</label>
           <br>
-          <input type="password" id="passwd" placeholder="Contraseña"/>
+          <input type="password" required id="passwd"/><label>Constraseña</label>
           <br>
           <input type="checkbox" id="acepto"/>
           <label for="acepto">Mantener sesion iniciada</label>
+          <a href="pwolvidada.html">Contraseña olvidada?</a>
           <br>
-          <button type="button" onclick="window.location.href = 'index.html';">Login</button>
+          <button type="submit" onclick="window.location.href = 'index.html';">Login</button>
           <button type="button" onclick="window.location.href = 'registro.html';">Registrarse</button>
         </form>
       </div>

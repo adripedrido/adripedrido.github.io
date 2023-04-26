@@ -93,10 +93,10 @@ input {
 }
 
 #usrName {
-    border-radius: 15px;
     width: 390px;
     border: none;
-    background-color: rgba(207, 207, 207, 0.4);
+    border-bottom: 2px solid rgba(207, 207, 207, 0.4);
+    background: transparent;
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -104,19 +104,19 @@ input {
     padding-left: 10px;
     height: 35px;
     outline: none;
-    border: none;
 }
 
 #usrName:focus {
-    outline: 1px solid #0077ff;
+    outline: none;
+    border-color: #0077ff;
     transition: 400ms;
 }
 
 #correo {
-    border-radius: 15px;
     width: 390px;
     border: none;
-    background-color: rgba(207, 207, 207, 0.4);
+    border-bottom: 2px solid rgba(207, 207, 207, 0.4);
+    background: transparent;
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -126,15 +126,16 @@ input {
 }
 
 #correo:focus {
-    outline: 1px solid #0077ff;
+    outline: none;
+    border-color: #0077ff;
     transition: 400ms;
 }
 
 #passwd {
-    border-radius: 15px;
     width: 390px;
     border: none;
-    background-color: rgba(207, 207, 207, 0.4);
+    border-bottom: 2px solid rgba(207, 207, 207, 0.4);
+    background: transparent;
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -144,7 +145,8 @@ input {
 }
 
 #passwd:focus {
-    outline: 1px solid #0077ff;
+    outline: none;
+    border-color: #0077ff;
     transition: 400ms;
 }
 
