@@ -60,6 +60,12 @@ body {
     color: white;
 }
 
+.wrapper a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 #form1 {
     display: inline-block;
     text-align: left;
@@ -72,8 +78,8 @@ body {
     margin-right: auto;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
-    border: 1px solid rgba(255, 255, 255, 0.692)
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.29);
+    backdrop-filter: blur(1.3px);
 }
 
 #form1 p {
@@ -90,15 +96,15 @@ input {
 }
 
 #correo {
-    width: 390px;
+    width: 100%;
     border: none;
     border-bottom: 2px solid rgba(207, 207, 207, 0.4);
     background: transparent;
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
-    padding: 4px;
     padding-left: 10px;
+    padding: 4px;
     height: 35px;
 }
 
@@ -106,18 +112,19 @@ input {
     outline: none;
     border-color: #0077ff;
     transition: 400ms;
+    padding-left: 10px;
 }
 
 #passwd {
-    width: 390px;
+    width: 100%;
     border: none;
     border-bottom: 2px solid rgba(207, 207, 207, 0.4);
     background: transparent;
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 4px;
     padding-left: 10px;
+    padding: 4px;
     height: 35px;
 }
 
@@ -125,6 +132,7 @@ input {
     outline: none;
     border-color: #0077ff;
     transition: 400ms;
+    padding-left: 10px;
 }
 
 input {
@@ -186,8 +194,8 @@ button:hover {
     }
 
     #form1 {
-        height: 250px;
-        width: 495px;
+        height: 100%;
+        width: auto;
         margin-top: 5vh;
     }
 }
@@ -232,7 +240,7 @@ button:hover {
     #form1 {
         width: 100%;
         height: 100vh;
-        margin: 0;
+        margin: auto;
         border-radius: 0;
     }
 
@@ -242,35 +250,38 @@ button:hover {
     }
 
     #correo {
-        border-radius: 15px;
-        width: 390px;
+        width: 100%;
         border: none;
-        background-color: rgba(207, 207, 207, 0.4);
+        border-bottom: 2px solid rgba(207, 207, 207, 0.4);
+        background: transparent;
         color: white;
         margin-top: 5px;
         margin-bottom: 5px;
+        padding-left: 10px;
         padding: 4px;
         height: 35px;
     }
 
     #correo:focus {
         outline: none;
+        padding-left: 10px;
     }
 
     #passwd {
-        border-radius: 15px;
+        width: 100%;
         border: none;
-        width: 390px;
-        background-color: rgba(207, 207, 207, 0.4);
+        border-bottom: 2px solid rgba(207, 207, 207, 0.4);
+        background: transparent;
         color: white;
         margin-top: 10px;
         margin-bottom: 10px;
+        padding-left: 10px;
         padding: 4px;
         height: 35px;
     }
 
     #passwd:focus {
         outline: none;
-        padding-left: 5px;
+        padding-left: 10px;
     }
 }

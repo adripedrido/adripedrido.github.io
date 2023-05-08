@@ -24,19 +24,21 @@
             <li><a href="login.html"><i class="fas fa-user"></i></a></li>
           </ul>
         </nav>
-        <form id="form1" method="#" action="#">
-          <p>Inicio Sesion</p>
-          <input type="mail" required id="correo"/><label>Correo</label>
-          <br>
-          <input type="password" required id="passwd"/><label>Constraseña</label>
-          <br>
-          <input type="checkbox" id="acepto"/>
-          <label for="acepto">Mantener sesion iniciada</label>
-          <a href="pwolvidada.html">Contraseña olvidada?</a>
-          <br>
-          <button type="submit" onclick="window.location.href = 'index.html';">Login</button>
-          <button type="button" onclick="window.location.href = 'registro.html';">Registrarse</button>
-        </form>
+        <div class="wrapper">
+          <form id="form1" method="#" action="#">
+            <p>Inicio Sesion</p>
+            <input type="mail" required id="correo" placeholder="Correo"/>
+            <br>
+            <input type="password" required id="passwd" placeholder="Contraseña"/>
+            <br>
+            <input type="checkbox" id="acepto"/>
+            <label for="acepto">Mantener sesion iniciada</label>
+            <a href="pwolvidada.html">Contraseña olvidada?</a>
+            <br>
+            <button type="submit" onclick="window.location.href = 'index.html';">Login</button>
+            <button type="button" onclick="window.location.href = 'registro.html';">Registrarse</button>
+          </form>
+        </div>
       </div>
     </header>
 </body>
