@@ -232,10 +232,12 @@ button:hover {
         left: -100%;
         text-align: center;
         transition: all 1s;
+        backdrop-filter: blur(2px);
     }
 
     #check:checked ~ ul {
         left: 0;
+        overflow: hidden;
     }
 
     #form1 {
