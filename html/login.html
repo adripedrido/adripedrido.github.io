@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MC-Place</title>
     <link rel="stylesheet" href="/css/login.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/11189652a9.js" crossorigin="anonymous"></script>
 </head>
   
 <body>
@@ -25,12 +25,18 @@
           </ul>
         </nav>
         <div class="wrapper">
-          <form id="form1" method="#" action="#">
+
+          <form id="form1" method="#" action="#" novalidate>
             <p>Inicio Sesion</p>
+            <label id="mail-icon"><i class="fa-sharp fa-regular fa-envelope"></i></i></label>
             <input type="mail" required id="correo" placeholder="Correo"/>
-            <i class="fa-duotone fa-envelope"></i>
+            <i class="fas fa-check-circle"></i><i class="fa-regular fa-lock"></i>
+            <i class="fas fa-exclamation-circle"></i>
             <br>
+            <label id="lock-icon"><i class="fa-solid fa-lock"></i></i></label>
             <input type="password" required id="passwd" placeholder="Contraseña"/>
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
             <br>
             <input type="checkbox" id="acepto"/>
             <label for="acepto">Mantener iniciado</label>
@@ -44,6 +50,9 @@
         </div>
       </div>
     </header>
+
+    <script src="js/form.js"></script>
+    <script src="https://kit.fontawesome.com/11189652a9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
