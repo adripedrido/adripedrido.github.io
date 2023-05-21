@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MC-Place</title>
     <link rel="stylesheet" href="/css/login.css" />
+    <script src="js\login.js"></script>
     <script src="https://kit.fontawesome.com/11189652a9.js" crossorigin="anonymous"></script>
 </head>
   
@@ -30,16 +31,14 @@
             <p>Inicio Sesion</p>
             <label id="mail-icon"><i class="fa-sharp fa-regular fa-envelope"></i></label>
             <input type="mail" required id="correo" placeholder="Correo"/>
-            <label id="nameValIcon"><i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i></label>
+            <span id="correoError" class="error-message"></span>
             <br>
             <label id="lock-icon"><i class="fa-solid fa-lock"></i></label>
             <input type="password" required id="passwd" placeholder="Contraseña"/>
-            <label id="passValIcon"><i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i></label>
+            <span id="passwordError" class="error-message"></span>
             <br>
             <input type="checkbox" id="acepto"/>
-            <label for="acepto">Mantener iniciado</label>
-            <br>
-            <a href="pwolvidada.html">Contraseña olvidada?</a>
+            <label for="acepto">Mantener iniciado</label><a id="pwolvidada" href="pwolvidada.html">Contraseña olvidada?</a>
             <br>
             <button type="submit" onclick="window.location.href = 'index.html';">Login</button>
             <br>
@@ -48,9 +47,6 @@
         </div>
       </div>
     </header>
-
-    <script src="js/form.js"></script>
-    <script src="https://kit.fontawesome.com/11189652a9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
