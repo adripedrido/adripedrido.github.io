@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MC-Place</title>
     <link rel="stylesheet" href="/css/registro.css" />
+    <link rel="script" href="/js/registro.js"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 </head>
   
@@ -27,18 +28,22 @@
         <form id="form1" method="#" action="#">
           <p>Registro usuario</p>
           <input id="usrName" placeholder="Usuario">
+          <span id="usrNameError" class="error-message"></span>
           <br>
           <input type="mail" id="correo" placeholder="Correo"/>
+          <span id="correoError" class="error-message"></span>
           <br>
           <input type="password" id="passwd" placeholder="Contraseña"/>
+          <span id="passwdError" class="error-message"></span>
           <br>
           <input type="password" id="passwd" placeholder="Repetir contraseña"/>
+          <span id="repeatPasswd" class="error-message"></span>
           <br>
           <input type="checkbox" id="acepto"/>
           <label for="acepto">Acepto los <a href="TermYCond.html">Terminos y condiciones</a></label>
+
           <br>
-          <button type="button" onclick="window.location.href = 'index.html';">Registro</button>
-          <button type="button" onclick="window.location.href = 'login.html';">Inicio sesion</button>
+          <button type="submit" onclick="window.location.href = 'index.html';">Registrarse</button>
         </form>
       </div>
     </header>
