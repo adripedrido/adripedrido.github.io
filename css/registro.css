@@ -157,8 +157,30 @@ input {
     padding-left: 15px;
 }
 
+#repeatPasswd {
+    width: 390px;
+    border: none;
+    border-bottom: 2px solid rgba(207, 207, 207, 0.4);
+    background: transparent;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 4px;
+    padding-left: 10px;
+    height: 35px;
+    outline: none;
+}
+
+#repeatPasswd:focus {
+    outline: none;
+    border-color: #0077ff;
+    transition: 400ms;
+    padding-left: 15px;
+}
+
 input {
     padding-left: 10px;
+    font-size: 17px;
 }
 
 #acepto {
@@ -177,8 +199,7 @@ button {
     font-size: 17px;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-right: 5px;
-    margin-left: 80px;
+    width: 100%;
     padding: 5px;
     display: inline-block;
 }

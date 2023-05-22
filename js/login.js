@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
       var correoInput = document.getElementById("correo");
       var passwordInput = document.getElementById("passwd");
+      var acepto = document.getElementById("acepto");
 
       var correo = correoInput.value;
       var password = passwordInput.value;
+      var acepto = aceptoCheckbox.checked;
 
       var errors = {};
 
@@ -26,7 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
       if (Object.keys(errors).length === 0) {
         console.log("Formulario válido. Datos a enviar:", {
           correo: correo,
-          password: password
+          password: password,
+          acepto: acepto
         });
       }
     });
