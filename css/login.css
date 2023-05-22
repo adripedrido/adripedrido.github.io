@@ -66,7 +66,7 @@ body {
     text-decoration: none;
 }
 
-#form1 {
+#form {
     display: inline-block;
     text-align: left;
     margin-top: 5%;
@@ -83,7 +83,7 @@ body {
     transition-duration: 500ms;
 }
 
-#form1 p {
+#form p {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
@@ -96,6 +96,7 @@ input {
     margin-left: 35px;
     font-size: 17px;
 }
+
 
 #mail-icon {
     position: absolute;
@@ -123,6 +124,14 @@ input {
     padding-left: 10px;
 }
 
+#correo:valid {
+    border-color: limegreen;
+}
+
+#correo:invalid:focus {
+    border-color: red;
+}
+
 #lock-icon {
     position: absolute;
     margin-top: 17px;
@@ -136,10 +145,11 @@ input {
     background: transparent;
     color: white;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding-left: 10px;
     padding: 4px;
     height: 35px;
+    margin-bottom: 20px;
 }
 
 #passwd:focus {
@@ -147,10 +157,7 @@ input {
     border-color: #0077ff;
     transition: 400ms;
     padding-left: 10px;
-    
 }
-
-
 
 input {
     padding-left: 10px;

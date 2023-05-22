@@ -25,28 +25,30 @@
             <li><a href="login.html"><i class="fas fa-user"></i></a></li>
           </ul>
         </nav>
-        <form id="form1" method="#" action="#">
+        <form id="form" method="#" action="#">
           <p>Registro usuario</p>
           <input id="usrName" placeholder="Usuario">
-          <span id="usrNameError" class="error-message"></span>
+          <span id="usrNameError"></span>
           <br>
-          <input type="mail" id="correo" placeholder="Correo"/>
-          <span id="correoError" class="error-message"></span>
+          <input type="mail" id="correo" placeholder="Correo" onkeyup=""/>
+          <span id="correoError"></span>
           <br>
           <input type="password" id="passwd" placeholder="Contraseña"/>
-          <span id="passwdError" class="error-message"></span>
+          <span id="passwdError"></span>
           <br>
           <input type="password" id="repeatPasswd" placeholder="Repetir contraseña"/>
-          <span id="repeatPasswd" class="error-message"></span>
+          <span id="repeatPasswdError"></span>
           <br>
           <input type="checkbox" id="acepto"/>
           <label for="acepto">Acepto los <a href="TermYCond.html">Terminos y condiciones</a></label>
-          <span id="aceptoError" class="error-message"></span>
+          <span id="aceptoError"></span>
           <br>
           <button type="submit" onclick="">Registrarse</button>
+          <form onsubmit="return false"></form>
         </form>
       </div>
     </header>
+    <script href="/js/registro.js"></script>
 </body>
 
 </html>

@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var form = document.getElementById("form1");
+    var form = document.getElementById("form");
     form.addEventListener("submit", function(event) {
       event.preventDefault();
 
       var correoInput = document.getElementById("correo");
       var passwordInput = document.getElementById("passwd");
-      var acepto = document.getElementById("acepto");
+      var mantenerSesionCheckbox = document.getElementById("acepto");
 
       var correo = correoInput.value;
       var password = passwordInput.value;
-      var acepto = aceptoCheckbox.checked;
+      var mantenerSesion = mantenerSesionCheckbox.checked;
 
       var errors = {};
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Formulario válido. Datos a enviar:", {
           correo: correo,
           password: password,
-          acepto: acepto
+          mantenerSesion: mantenerSesion
         });
       }
     });
