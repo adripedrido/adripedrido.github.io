@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MC-Place</title>
     <link rel="stylesheet" href="/css/registro.css" />
-    <link rel="script" href="/js/registro.js"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 </head>
   
@@ -28,27 +27,113 @@
         <form id="form" method="#" action="#">
           <p>Registro usuario</p>
           <input id="usrName" placeholder="Usuario">
-          <span id="usrNameError"></span>
+          <span id="usrNameError" class="error"></span>
           <br>
           <input type="mail" id="correo" placeholder="Correo" onkeyup=""/>
-          <span id="correoError"></span>
+          <span id="correoError" class="error"></span>
           <br>
           <input type="password" id="passwd" placeholder="Contraseña"/>
-          <span id="passwdError"></span>
+          <span id="passwdError" class="error"></span>
           <br>
           <input type="password" id="repeatPasswd" placeholder="Repetir contraseña"/>
-          <span id="repeatPasswdError"></span>
+          <span id="repeatPasswdError" class="error"></span>
           <br>
-          <input type="checkbox" id="acepto"/>
-          <label for="acepto">Acepto los <a href="TermYCond.html">Terminos y condiciones</a></label>
-          <span id="aceptoError"></span>
+          <section id="checkCondiciones">
+            <input type="checkbox" id="acepto" />
+            <label for="acepto" id="Terminos"">Acepto los <a href="TermYCond.html">Términos y condiciones</a></label>
+          </section>
+          <br>
+          <span id="aceptoError" class="error"></span>
           <br>
           <button type="submit" onclick="">Registrarse</button>
           <form onsubmit="return false"></form>
         </form>
       </div>
     </header>
-    <script href="/js/registro.js"></script>
+    <script>
+          document.addEventListener("DOMContentLoaded", function() {
+          var form = document.getElementById("form");
+          form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          
+          var usrNameInput = document.getElementById("usrName");
+          var correoInput = document.getElementById("correo");
+          var passwdInput = document.getElementById("passwd");
+          var repeatPasswdInput = document.getElementById("repeatPasswd");
+          var aceptoCheckbox = document.getElementById("acepto");
+          
+          var usrName = usrNameInput.value;
+          var correo = correoInput.value;
+          var passwd = passwdInput.value;
+          var repeatPasswd = repeatPasswdInput.value;
+          var acepto = aceptoCheckbox.checked;
+          
+          var errors = {};
+          
+          if (!usrName.trim()) {
+            errors.usrName = "El nombre de usuario es requerido";
+          } else if (!usrName.match(/^[A-Za-z]*$/)) {
+            errors.usrName = "El nombre no es válido";
+          }
+        
+          if (!correo.trim()) {
+            errors.correo = "El correo electrónico es requerido";
+          } else if (!correo.match(/^[A-Za-z._\-0-9]*@[A-Za-z]*\.[a-z]{2,4}$/)) {
+            errors.correo = "El correo no es válido";
+          }
+        
+          var upperCaseLetters = /[A-Z]/g;
+          var lowerCaseLetters = /[a-z]/g;
+          var numbers = /[0-9]/g;
+        
+          if (!passwd.trim()) {
+            errors.passwd = "La contraseña es requerida";
+          } else if (passwd.length < 6) {
+            errors.passwd = "La contraseña debe tener al menos 6 caracteres";
+          } else if (!upperCaseLetters.test(passwd) || !lowerCaseLetters.test(passwd) || !numbers.test(passwd)) {
+            errors.passwd = "La contraseña debe contener minúsculas, mayúsculas y números";
+          }
+        
+          if (passwd !== repeatPasswd) {
+            errors.repeatPasswd = "Las contraseñas no coinciden";
+          }
+        
+          if (!acepto) {
+            errors.acepto = "Debe aceptar los términos y condiciones";
+          }
+        
+          displayErrorMessages(errors);
+        
+          if (Object.keys(errors).length === 0) {
+            console.log("Formulario válido. Datos a enviar:", {
+              usrName: usrName,
+              correo: correo,
+              passwd: passwd,
+              repeatPasswd: repeatPasswd,
+              acepto: acepto
+            });
+          }
+        });
+      
+        function displayErrorMessages(errors) {
+          var usrNameError = document.getElementById("usrNameError");
+          usrNameError.textContent = errors.usrName || "";
+        
+          var correoError = document.getElementById("correoError");
+          correoError.textContent = errors.correo || "";
+        
+          var passwdError = document.getElementById("passwdError");
+          passwdError.textContent = errors.passwd || "";
+        
+          var repeatPasswdError = document.getElementById("repeatPasswdError");
+          repeatPasswdError.textContent = errors.repeatPasswd || "";
+        
+          var aceptoError = document.getElementById("aceptoError");
+          aceptoError.textContent = errors.acepto || "";
+        }
+      });
+  </script>
 </body>
 
 </html>
+

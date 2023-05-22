@@ -235,7 +235,7 @@ button:hover {
         margin-top: 280px;
     }
 
-    #form1 {
+    #form {
         height: 100%;
         width: 450px;
         margin-top: 5vh;
@@ -283,7 +283,7 @@ button:hover {
         overflow: hidden;
     }
 
-    #form1 {
+    #form {
         width: 100%;
         height: 100dvh;
         margin: 0;
